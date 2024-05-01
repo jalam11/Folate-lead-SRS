@@ -1,0 +1,913 @@
+"Value","LIN","CI_L","CI_U","SE","time"
+54.2574730129962,1.93903992294541,0.0606762020875289,3.78484306331832,0.946951733000144,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+55.2574730129962,1.88311681100333,0.057257853669666,3.68480142532324,0.923505218919473,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+56.2574730129962,1.82719369906126,0.0423677838094567,3.58475978732816,0.900265100629985,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+57.2574730129962,1.77127058711918,0.0333346384600031,3.47699930270588,0.877247781846391,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+58.2574730129962,1.71534747517711,0.0236872490691144,3.36352605431696,0.854471267001138,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+59.2574730129962,1.65942436323503,0.0143490472710143,3.22856542832658,0.831955328900768,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+60.2574730129962,1.60350125129296,0.0185110795813433,3.13476336791068,0.809721760131979,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+61.2574730129962,1.54757813935088,0.0073262135511098,3.0567964627443,0.787794736341921,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+62.2574730129962,1.49165502740881,-0.0131926544874775,2.97566665899234,0.766200912995072,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+63.2574730129962,1.43573191546674,-0.0226517261333123,2.8829046648829,0.74496945978062,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+64.2574730129962,1.37980880352466,-0.0448776585913614,2.78450121014674,0.724132603399726,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+65.2574730129962,1.32388569158259,-0.0747381598005597,2.68888346275655,0.703726704571448,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+66.2574730129962,1.26796875058796,-0.095198638184718,2.5843568261416,0.683792207621994,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+67.2574730129962,1.21209862053842,-0.109743758548692,2.48375805487412,0.664376077690708,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+68.2574730129962,1.15632790401176,-0.136477212640715,2.38534522435314,0.645531991883216,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+69.2574730129962,1.10070921542597,-0.156717591244048,2.29053064756237,0.627317451364135,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+70.2574730129962,1.04529516919904,-0.17634623986978,2.23310069177994,0.609791870630683,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+71.2574730129962,0.990138379748957,-0.196510756739571,2.15561459884267,0.593015564372607,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+72.2574730129962,0.935291461493712,-0.223054950215847,2.04599005608117,0.577048980152112,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+73.2574730129962,0.880807028851292,-0.250234808367578,1.97515078299622,0.561951985081184,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+74.2574730129962,0.826737696239684,-0.281549678551467,1.88832454291662,0.547782972083284,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+75.2574730129962,0.773136078076877,-0.289268608479768,1.82257697932125,0.534597750769056,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+76.2574730129962,0.720054788780859,-0.338673668201022,1.72867407666381,0.522448264362722,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+77.2574730129962,0.667546442769618,-0.356793157482248,1.64190444324789,0.511381167210941,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+78.2574730129962,0.615663654461144,-0.403091541087548,1.60631032853609,0.501436313799963,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+79.2574730129962,0.564459038273424,-0.43130577025028,1.51999530163612,0.492645231848185,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+80.2574730129962,0.513985208624445,-0.465101796977185,1.4406707080374,0.485029670906934,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+81.2574730129962,0.464294779932197,-0.520115691385196,1.37327235945829,0.478600329960622,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+82.2574730129962,0.415440366614668,-0.546877782884139,1.31793198408395,0.473355868892036,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+83.2574730129962,0.367474583089844,-0.554886408913441,1.25831553636977,0.469282296740926,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+84.2574730129962,0.320450043775717,-0.592562755010744,1.23370961964252,0.466352804100131,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+85.2574730129962,0.274419363090274,-0.625175556901741,1.19906484915992,0.464528070309219,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+86.2574730129962,0.229435155451501,-0.66467748375221,1.15947867752288,0.463757033530288,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+87.2574730129962,0.185550035277389,-0.701711161990639,1.13355955141996,0.4639780701125,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+88.2574730129962,0.142816616985925,-0.733276365458407,1.0899557290271,0.465120495584062,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+89.2574730129962,0.101287514995096,-0.77148051258067,1.04631374222064,0.467106278129141,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+90.2574730129962,0.061015343722894,-0.811826000168629,1.00474620704163,0.469851848662031,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+91.2574730129962,0.0220527175873038,-0.854484976349489,0.963513709983705,0.473269898730371,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+92.2574730129962,-0.0155477489936864,-0.901959695438478,0.923392999277109,0.477271075225258,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+93.2574730129962,-0.051733441602086,-0.949930843041661,0.884653061642535,0.481765501389487,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+94.2574730129962,-0.0864517458199083,-0.986442115667671,0.847548057324196,0.486664195286021,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+95.2574730129962,-0.119650047229166,-1.02746512519221,0.828408257578294,0.491880861795367,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+96.2574730129962,-0.151275731411868,-1.08062278993301,0.828383507459424,0.497333359509887,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+97.2574730129962,-0.181276183950029,-1.12560343456624,0.79661849087492,0.502945645170767,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+98.2574730129962,-0.209609856913688,-1.1597003501969,0.795486756634721,0.508649358901063,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+99.2574730129962,-0.236290520652511,-1.20347315875379,0.803158555171858,0.514386153599225,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+100.257473012996,-0.261349195182624,-1.24200241257281,0.772384518084499,0.520106791154889,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+101.257473012996,-0.284816906183054,-1.28017351871877,0.778242580626605,0.525769448400962,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+102.257473012996,-0.306724679332831,-1.31599328375654,0.777653151751194,0.531338017326368,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+103.257473012996,-0.327103540310986,-1.34533265352797,0.764326439548787,0.536781302508195,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+104.257473012996,-0.345984514796548,-1.35857804041353,0.748610509232024,0.542072740234805,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+105.257473012996,-0.363398628468546,-1.37461578882222,0.734019463851184,0.547189953001814,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+106.257473012996,-0.37937690700601,-1.40909289637415,0.72046974675343,0.552114318513185,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+107.257473012996,-0.393950376087971,-1.44090962233643,0.713994236322983,0.556830576497865,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+108.257473012996,-0.407150061393455,-1.45478651968241,0.701613970846393,0.561326472470396,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+109.257473012996,-0.419006988601496,-1.46649491080678,0.695034560221068,0.565592436609174,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+110.257473012996,-0.42955218339112,-1.4745653295367,0.692919578410523,0.569621295378771,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+111.257473012996,-0.438816671441359,-1.49155077586681,0.699050367782422,0.573408013248831,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+112.257473012996,-0.446831478431242,-1.50663513935229,0.704060781734128,0.57694946177684,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+113.257473012996,-0.453627630039797,-1.51990227842412,0.695698813209962,0.580244213362472,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+114.257473012996,-0.459236151946057,-1.53114980318825,0.692998987340627,0.583292357101137,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+115.257473012996,-0.463688069829048,-1.54765263912282,0.695029151683785,0.58609533433111,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+116.257473012996,-0.467014409367802,-1.56330856005306,0.705142579397815,0.588655791659225,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+117.257473012996,-0.469246196241348,-1.57816329163826,0.719582785964253,0.590977449449061,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+118.257473012996,-0.470414456128715,-1.58859112395972,0.734890138737839,0.593064983952729,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+119.257473012996,-0.470550214708933,-1.59807570894114,0.750818983857139,0.594923921456239,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+120.257473012996,-0.469684497661032,-1.60430950744378,0.767350872695427,0.596560542985534,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+121.257473012996,-0.467848330664041,-1.59906137583331,0.784467356625978,0.597981798283532,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+122.257473012996,-0.46507273939699,-1.59217039006439,0.802149987022068,0.599195227917521,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+123.257473012996,-0.46138874953891,-1.58389521426911,0.813430509984759,0.600208892511073,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+124.257473012996,-0.456827386768827,-1.57282128275036,0.832021758250565,0.601031308216024,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+125.257473012996,-0.451419676765774,-1.55265026854675,0.850846423761204,0.60167138764902,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+126.257473012996,-0.445196645208779,-1.53824549364479,0.869896657258124,0.602138385614726,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+127.257473012996,-0.438189317776872,-1.53101130710653,0.889164609482773,0.602441849025261,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+128.257473012996,-0.430428720149083,-1.52035100704125,0.903472333711028,0.60259157050386,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+129.257473012996,-0.421945878004442,-1.50371339032455,0.90476415264614,0.602597545231299,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+130.257473012996,-0.412771817021977,-1.48589415541483,0.906570260771264,0.602469930657235,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+131.257473012996,-0.402937562880719,-1.4670585485921,0.908870408627293,0.602219008756207,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+132.257473012996,-0.392474141259696,-1.4470828556607,0.912346119462075,0.601855150560466,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+133.257473012996,-0.38141257783794,-1.42593013961693,0.921165946981587,0.601388782749644,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+134.257473012996,-0.36978389829448,-1.40409118810805,0.9507556707949,0.600830356121255,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+135.257473012996,-0.357619128308343,-1.38886016053361,0.967193064599454,0.60019031615273,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+136.257473012996,-0.344949293558561,-1.37987118829087,0.970292211429324,0.599479079206542,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+137.257473012996,-0.331805419724165,-1.37020241943506,0.973301473384546,0.598707018194533,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+138.257473012996,-0.318218532484181,-1.35957266639274,0.976226866466292,0.597884444107559,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+139.257473012996,-0.304219657517641,-1.34801724791342,0.979195570305936,0.597021543494187,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+140.257473012996,-0.289839820503574,-1.33579735440607,0.989933403959084,0.596128295135205,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+141.257473012996,-0.275110047121011,-1.32267902319174,1.00068930355569,0.595214504734051,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+142.257473012996,-0.260061363048979,-1.29873017176079,1.01145621274074,0.594289802967597,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+143.257473012996,-0.244724793966508,-1.27427082013293,1.02236471421835,0.593363629582712,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+144.257473012996,-0.229131365552631,-1.24934723682657,1.03391064164746,0.59244532323305,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+145.257473012996,-0.213312103486374,-1.23486848982734,1.05970539385956,0.591544102636633,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+146.257473012996,-0.197298033446766,-1.21511958317421,1.07844292155256,0.590669001308711,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+147.257473012996,-0.181120181112841,-1.17958360501765,1.08514560679999,0.589828678348178,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+148.257473012996,-0.164809572163627,-1.15688433869562,1.1052514315062,0.589031253585846,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+149.257473012996,-0.14839723227815,-1.13036348597931,1.13802485807114,0.588284018677729,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+150.257473012996,-0.131914187135444,-1.11607881888466,1.16086739670398,0.587593369260008,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+151.257473012996,-0.115391462414537,-1.09459282228282,1.16890933330105,0.586964678533149,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+152.257473012996,-0.0988581451071324,-1.0811313036899,1.19783864325344,0.586402673577749,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+153.257473012996,-0.0823247155871236,-1.06527725077564,1.21319795602216,0.58591116102579,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+154.257473012996,-0.0657912860671148,-1.05192872850959,1.22180935278443,0.585493203241954,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+155.257473012996,-0.0492578565471051,-1.03174584995737,1.2297799001298,0.585151290032855,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+156.257473012996,-0.0327244270270954,-1.00998864821118,1.24216430009637,0.584887363134136,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+157.257473012996,-0.0161909975070857,-0.991411880794473,1.26149019974882,0.584702808222848,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+158.257473012996,0.000342432012923943,-0.972835113377764,1.28307826560065,0.584598467841587,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+159.257473012996,0.0168758615329336,-0.954258345961056,1.30500262501607,0.584574863602003,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+160.257473012996,0.0334092910529424,-0.928280794583902,1.3269269844315,0.584632375275427,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+161.257473012996,0.0499427205729512,-0.90206438596617,1.34859847031522,0.584771198644065,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+162.257473012996,0.0664761500929609,-0.875931973053118,1.36373043860191,0.58499130683121,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+163.257473012996,0.0830095796129706,-0.853753362024886,1.37924934902225,0.585292600695919,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+164.257473012996,0.0995430091329785,-0.835141078823452,1.38920784537508,0.585674940921121,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+165.257473012996,0.116076438652989,-0.816153066637802,1.40794767816792,0.586138168519777,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+166.257473012996,0.132609868172997,-0.797165054452153,1.43242205542443,0.586682114176947,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+167.257473012996,0.149143297693008,-0.780811679664038,1.45702513583311,0.587306575909349,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+168.257473012996,0.165676727213018,-0.77108510350669,1.47826284382513,0.588011318196167,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+169.257473012996,0.182210156733025,-0.761358527349346,1.51327643530872,0.588796079190746,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+170.257473012996,0.198743586253035,-0.751003043013026,1.54429465503429,0.589660574952167,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+171.257473012996,0.215277015773046,-0.726229179856858,1.56620841327727,0.590604490274147,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+172.257473012996,0.231810445293054,-0.701339305029259,1.59032714071801,0.591627475655435,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+173.257473012996,0.248343874813063,-0.693005301804907,1.61819353982796,0.592729130955684,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+174.257473012996,0.264877304333075,-0.676590586154141,1.64624823630483,0.593909018437174,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+175.257473012996,0.281410733853083,-0.656464781239905,1.67435628907268,0.595166672826197,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+176.257473012996,0.297944163373091,-0.636338976325669,1.70134175395249,0.596501602235462,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+177.257473012996,0.314477592893103,-0.616213171411434,1.7297989868058,0.597913289081629,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+178.257473012996,0.331011022413112,-0.596147161718085,1.75799301874133,0.59940119103637,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+179.257473012996,0.347544451933119,-0.581489605267961,1.78634875526997,0.600964742007131,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+180.257473012996,0.364077881453128,-0.566782034685411,1.81891007731618,0.602603353143713,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+181.257473012996,0.380611310973139,-0.544552726224569,1.85476327570052,0.604316413866829,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+182.257473012996,0.397144740493149,-0.52368342272297,1.87050383424468,0.606103292914791,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+183.257473012996,0.413678170013158,-0.50667210272343,1.88731112735747,0.607963339404533,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+184.257473012996,0.430211599533167,-0.489660782723887,1.90985819215784,0.609895883903261,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+185.257473012996,0.446745029053174,-0.473544473162762,1.94689412137711,0.611900239507094,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+186.257473012996,0.463278458573187,-0.456531693459437,1.95812130917507,0.613975702923176,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+187.257473012996,0.479811888093197,-0.4400073443407,1.96658254939932,0.616121555551863,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+188.257473012996,0.496345317613205,-0.423499541709046,1.9937725192209,0.618337064565724,"First trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+38.8906993938488,2.30884520070208,0.298894912073737,4.53474150818025,1.11959313819106,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+39.8906993938488,2.26937077731868,0.286302076443496,4.46181882411142,1.1030500068651,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+40.8906993938488,2.22989635393528,0.267805770435053,4.38301212176009,1.08654768833148,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+41.8906993938488,2.19042193055188,0.252783229294616,4.31238182870271,1.07008807077018,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+42.8906993938488,2.15094750716849,0.239298430842909,4.24970946185197,1.05367315530178,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+43.8906993938488,2.11147308378509,0.233521212431507,4.16834529033441,1.03730506394346,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+44.8906993938488,2.07199866040169,0.227689568944649,4.08460841304469,1.02098605099977,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+45.8906993938488,2.03252423701829,0.221803153774447,4.00494372524759,1.00471851851206,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+46.8906993938488,1.99304981363489,0.21006542007432,3.93922594212937,0.988505041136717,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+47.8906993938488,1.9535753902515,0.19267066902285,3.87350815901114,0.972348421021487,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+48.8906993938488,1.9141009668681,0.175276345010602,3.80779114572564,0.956251830806744,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+49.8906993938488,1.8746265544301,0.157884896337329,3.74208430691959,0.940219043503876,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+50.8906993938488,1.83515434845785,0.140499368731325,3.67640261230371,0.924254779679613,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+51.8906993938488,1.79569135346387,0.123122808010036,3.61076130349124,0.908364386963209,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+52.8906993938488,1.75624521468017,0.114743514444898,3.53808517823795,0.892553531257783,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+53.8906993938488,1.71682357733877,0.107790988057679,3.46401929303125,0.876828316691745,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+54.8906993938488,1.67743408667168,0.0929185054338834,3.39535721417763,0.86119546940446,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+55.8906993938488,1.63808438791093,0.0901378029450703,3.32806014579765,0.845662362965222,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+56.8906993938488,1.59878212628853,0.0865159861673455,3.26057116972015,0.830236828913199,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+57.8906993938488,1.5595349470365,0.0724473609849333,3.19315367652499,0.814927072310266,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+58.8906993938488,1.52035049538686,0.0516123505363927,3.12585130014414,0.799741524992171,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+59.8906993938488,1.48123641657162,0.0246494154085432,3.05931541312712,0.78468881894229,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+60.8906993938488,1.4422003558228,0.00233976501031139,3.0023189005914,0.769777784704084,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+61.8906993938488,1.40324995837243,-0.00452913013802112,2.92690201428639,0.75501745687232,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+62.8906993938488,1.36439286945251,-0.00271973121392382,2.86534764899859,0.740417084055919,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+63.8906993938488,1.32563673429507,-0.0274481418711973,2.80292067361651,0.7259861339851,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+64.8906993938488,1.28698919813212,-0.036303106939808,2.72740915539915,0.711734297569145,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+65.8906993938488,1.24845790619568,-0.0601274224508601,2.65225094029443,0.697671491660147,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+66.8906993938488,1.21005050371777,-0.0790162073275656,2.58139545723141,0.683807860205628,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+67.8906993938488,1.17177463593041,-0.101575402048386,2.51774123734874,0.670153773426547,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+68.8906993938488,1.13363794806561,-0.124102092389743,2.44936195059378,0.656719824607689,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+69.8906993938488,1.0956480853554,-0.14058492627518,2.37519700690076,0.643516824035632,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+70.8906993938488,1.05781269303178,-0.159037738832761,2.31798808158458,0.63055578956666,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+71.8906993938488,1.02013941632679,-0.176318452104596,2.26120672445587,0.617847933254893,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+72.8906993938488,0.982635900472424,-0.197378736511471,2.20617642466238,0.605404643422062,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+73.8906993938488,0.945309790700715,-0.218319478219382,2.14243545561761,0.593237461507743,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+74.8906993938488,0.908168732243677,-0.238415170441091,2.06381371313229,0.581358053006571,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+75.8906993938488,0.871220370333327,-0.258269363840977,2.00680922831307,0.569778171781704,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+76.8906993938488,0.834472350201684,-0.281555389161836,1.9467555207712,0.558509617047215,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+77.8906993938488,0.797932317080765,-0.306566180148692,1.88258630600979,0.547564182342679,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+78.8906993938488,0.761607916202587,-0.325964558440662,1.81272043726982,0.536953595887823,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+79.8906993938488,0.725506792799169,-0.338508478675452,1.75105293364789,0.526689451811096,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+80.8906993938488,0.689636592102528,-0.351005294692287,1.68394773684369,0.51678313190022,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+81.8906993938488,0.654004959344682,-0.363434707404303,1.63836846514471,0.507245717731263,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+82.8906993938488,0.618619539757649,-0.375929937984167,1.58388923850885,0.498087893299682,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+83.8906993938488,0.583487978573447,-0.389580198498435,1.52658437145934,0.489319838603322,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+84.8906993938488,0.548617921024092,-0.406098500785816,1.48038672848854,0.48095111501085,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+85.8906993938488,0.514017012341604,-0.431568239205692,1.42443000255169,0.472990543681593,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+86.8906993938488,0.479692897757999,-0.454446378596349,1.37710841242241,0.465446078770285,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+87.8906993938488,0.445653222505295,-0.469303148863518,1.33931921680301,0.458324677632268,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+88.8906993938488,0.411905631815511,-0.484370450524433,1.28930979386478,0.451632170713989,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+89.8906993938488,0.378457770920663,-0.499399089489256,1.24791425264769,0.445373134237538,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+90.8906993938488,0.345317285052769,-0.515314401022058,1.20329641863468,0.439550769129733,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+91.8906993938488,0.312491819443849,-0.543840780380254,1.16095694507551,0.434166789868412,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+92.8906993938488,0.279989019325918,-0.578982021463102,1.12548487194848,0.429221326986366,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+93.8906993938488,0.247816529930995,-0.605478206900753,1.08182679993229,0.42471284685903,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+94.8906993938488,0.215981996491097,-0.63352288478271,1.04420878695952,0.420638092089191,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+95.8906993938488,0.184493064238243,-0.66466499488879,1.00971114449643,0.416992045289169,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+96.8906993938488,0.15335737840445,-0.694600164644848,0.966781591338994,0.413767918919604,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+97.8906993938488,0.122582584221735,-0.713776926547558,0.950846759860271,0.410957190601909,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+98.8906993938488,0.0921763269221167,-0.738579109748941,0.911408212503949,0.4085496698943,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+99.8906993938488,0.0621462517376123,-0.752387486494853,0.874335802969064,0.406533628267412,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+100.890699393849,0.0325000039002403,-0.777456823029029,0.839838379816896,0.404895921981909,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+101.890699393849,0.00324511913741521,-0.801709600257591,0.795667463263254,0.403622133211937,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+102.890699393849,-0.0256151567107703,-0.823249580842113,0.752755417138254,0.402697009320625,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+103.890699393849,-0.054083169625402,-0.848800159468607,0.711214458055678,0.402104492488753,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+104.890699393849,-0.0821616412264796,-0.878314548209834,0.676432061175039,0.401827998271382,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+105.890699393849,-0.109853293134002,-0.913182101305234,0.648299055429468,0.401850605115322,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+106.890699393849,-0.137160846967967,-0.943589829520547,0.61136847098595,0.402155275276714,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+107.890699393849,-0.164087024348376,-0.972559925455482,0.572035773197418,0.402724880096739,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+108.890699393849,-0.190634546895225,-1.00324928242043,0.550059890572544,0.403542332409276,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+109.890699393849,-0.216806136228514,-1.02914865856925,0.527426188971801,0.404590718935138,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+110.890699393849,-0.242604513968244,-1.05693196715747,0.494470942464138,0.405853400186955,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+111.890699393849,-0.26803240173441,-1.08443079597462,0.481679626178395,0.407314091973131,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+112.890699393849,-0.293092521147015,-1.11123472983782,0.46415163839345,0.408956937584904,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+113.890699393849,-0.317787593826055,-1.14296645513423,0.443621950003801,0.410766563043102,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+114.890699393849,-0.342120341391529,-1.1767297638554,0.422530753632644,0.41272812279049,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+115.890699393849,-0.366093485463438,-1.20346392531089,0.40261897603955,0.414827336070296,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+116.890699393849,-0.38970974766178,-1.22996239853018,0.381285535812094,0.417050514232511,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+117.890699393849,-0.412971849606553,-1.26205027660294,0.363321914185169,0.419384579750999,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+118.890699393849,-0.435882512917757,-1.28578120324524,0.343779631783823,0.421817077795174,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+119.890699393849,-0.45844445921539,-1.30930094562934,0.323000466314948,0.424336181223772,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+120.890699393849,-0.480660410119452,-1.33238491495654,0.305853767444823,0.426930689862231,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+121.890699393849,-0.502533087249941,-1.36507327171595,0.28717540752581,0.429590024895829,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+122.890699393849,-0.524065212226856,-1.39069115530271,0.260252289021799,0.43230421916431,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+123.890699393849,-0.545259506670198,-1.42705030258823,0.241259722498095,0.435063904085599,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+124.890699393849,-0.566118692199962,-1.44942993152611,0.227096495376419,0.437860293870984,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+125.890699393849,-0.586645490436149,-1.46609692016933,0.202682075309039,0.440685167625582,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+126.890699393849,-0.606842622998759,-1.48671789273467,0.190237744104854,0.443530849858929,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+127.890699393849,-0.62671281150779,-1.51772592660487,0.179611015165437,0.446390189863404,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+128.890699393849,-0.64625877758324,-1.54624513885236,0.163936139256801,0.44925654035446,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+129.890699393849,-0.66548324284511,-1.56433883605984,0.152223878344635,0.452123735707383,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+130.890699393849,-0.684388928913398,-1.58437699088439,0.140712087123803,0.454986070071149,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+131.890699393849,-0.7029785574081,-1.61843178772864,0.129629142576576,0.457838275591176,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+132.890699393849,-0.72125484994922,-1.65166706627337,0.114631907659806,0.460675500929442,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+133.890699393849,-0.739220528156754,-1.68437959991708,0.107717245535219,0.463493290232381,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+134.890699393849,-0.756878313650701,-1.71642457931613,0.100858640757714,0.466287562663922,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+135.890699393849,-0.774230928051061,-1.74482051498158,0.0940621846694608,0.469054592592595,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+136.890699393849,-0.791281092977832,-1.77060022135473,0.0873681916629514,0.471790990497475,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+137.890699393849,-0.808031530051012,-1.79577297833538,0.076216456781515,0.474493684637338,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+138.890699393849,-0.824484960890602,-1.82034520503104,0.0689576390181567,0.477159903510422,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+139.890699393849,-0.8406441071166,-1.84432332054923,0.0647455011042387,0.479787159118147,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+140.890699393849,-0.856511690349005,-1.86771374399747,0.0529362314385756,0.482373231034771,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+141.890699393849,-0.872090432207816,-1.89124759143757,0.041273130979599,0.484916151275691,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+142.890699393849,-0.887383054313032,-1.91919236412376,0.0297548376551371,0.487414189949903,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+143.890699393849,-0.902392278284651,-1.94654389557339,0.0183799893930167,0.489865841676408,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+144.890699393849,-0.917120825742674,-1.9632006006915,0.0071472241210674,0.492269812740119,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+145.890699393849,-0.931571418307097,-1.97602940346917,-0.00394482023288562,0.49462500895965,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+146.890699393849,-0.94574677759792,-1.99511766031028,-0.0144259518909149,0.496930524237201,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+147.890699393849,-0.959649625235144,-2.014583473677,-0.0212761160464468,0.49918562975931,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+148.890699393849,-0.973282682838766,-2.03310919541387,-0.0280440142355442,0.501389763816505,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+149.890699393849,-0.986648672028785,-2.05111254188803,-0.0347389680838668,0.503542522209599,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+150.890699393849,-0.9997503144252,-2.06738757073885,-0.0413615265468534,0.505643649210508,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+151.890699393849,-1.01259033164801,-2.08144368996828,-0.0479122385799438,0.507693029045984,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+152.890699393849,-1.02517144531721,-2.09497274166274,-0.0543916531385762,0.509690677873301,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+153.890699393849,-1.03749637705281,-2.10798025076916,-0.065947815624304,0.511636736217885,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+154.890699393849,-1.0495678484748,-2.12064327369106,-0.0685517308221969,0.513531461843892,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+155.890699393849,-1.06138858120318,-2.13309013523041,-0.0733579790671804,0.515375223029873,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+156.890699393849,-1.07296129685795,-2.14425418323322,-0.0795018778702837,0.517168492222841,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+157.890699393849,-1.08428871705911,-2.15394996241056,-0.0855812893303345,0.518911840045327,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+158.890699393849,-1.09537356342665,-2.16696813068311,-0.0920887566539649,0.520605929631199,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+159.890699393849,-1.10621855758059,-2.17700965878258,-0.0998984119554192,0.522251511267304,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+160.890699393849,-1.11682642114091,-2.18661726766502,-0.104544849963112,0.523849417319181,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+161.890699393849,-1.12719987572761,-2.19921048743549,-0.109293275188671,0.525400557420323,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+162.890699393849,-1.13734164296069,-2.20450145898485,-0.11381506459047,0.526905913905599,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+163.890699393849,-1.14725444446016,-2.21252722535431,-0.118413806660503,0.528366537470604,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+164.890699393849,-1.15694100184601,-2.22008540484203,-0.123072853338874,0.529783543039768,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+165.890699393849,-1.16640403673824,-2.22728245016902,-0.128123107174992,0.531158105827117,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+166.890699393849,-1.17564627075685,-2.23405002761347,-0.136164966022671,0.532491457574559,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+167.890699393849,-1.18467042552183,-2.24037197285653,-0.143124720336514,0.53378488295354,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+168.890699393849,-1.1934792226532,-2.24625380465697,-0.148614527786546,0.535039716116816,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+169.890699393849,-1.20207538377093,-2.2517450300564,-0.156397907784719,0.536257337387969,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+170.890699393849,-1.21046163049505,-2.25144577313245,-0.167886780482522,0.537439170077103,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+171.890699393849,-1.21864068444553,-2.25435239529034,-0.174518772597949,0.53858667741197,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+172.890699393849,-1.22661526724239,-2.2614241608947,-0.179133787907574,0.539701359574518,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+173.890699393849,-1.23438810050562,-2.26835439025273,-0.180961452479019,0.540784750833579,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+174.890699393849,-1.24196190585523,-2.27473555952894,-0.180011598199456,0.541838416765094,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+175.890699393849,-1.2493394049112,-2.28056330564309,-0.18699377831495,0.542863951551938,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+176.890699393849,-1.25652331929353,-2.28596526075243,-0.192858944324773,0.543862975356046,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+177.890699393849,-1.26351637062224,-2.29094707638837,-0.194811032565036,0.544837131756118,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+178.890699393849,-1.27032128051731,-2.29551440408237,-0.199629396146895,0.545788085244804,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+179.890699393849,-1.27694077059875,-2.29985561103783,-0.204338681886662,0.546717518779792,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+180.890699393849,-1.28337756248655,-2.30381745117682,-0.202256534832169,0.547627131383774,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+181.890699393849,-1.28963437780072,-2.30867372511897,-0.202857877233622,0.548518635788799,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+182.890699393849,-1.29571393816124,-2.31698809995674,-0.207563228134316,0.549393756121015,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+183.890699393849,-1.30161896518812,-2.32518606401989,-0.212239940229485,0.550254225622268,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+184.890699393849,-1.30735218050137,-2.33367170112403,-0.218457714345749,0.551101784405554,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+185.890699393849,-1.31291630572098,-2.34467235715082,-0.220362838017781,0.551938177241712,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+186.890699393849,-1.31831406246694,-2.35545215771418,-0.214233294398664,0.552765151375245,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+187.890699393849,-1.32354817235926,-2.36601491504225,-0.217968398816958,0.553584454369568,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+188.890699393849,-1.32862135701793,-2.37636444136319,-0.214436178602324,0.554397832712548,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+189.890699393849,-1.33353633806296,-2.38656187158334,-0.210781819702098,0.555207030860664,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+190.890699393849,-1.33829583711434,-2.39671291646503,-0.206913601313188,0.556013787671951,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+191.890699393849,-1.34290257579207,-2.40666522096122,-0.203669089317618,0.556819834062593,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+192.890699393849,-1.34735927571616,-2.41642254420573,-0.20604047507766,0.557626890959923,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+193.890699393849,-1.35166865850659,-2.42640687011244,-0.198430779588386,0.558436667280935,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+194.890699393849,-1.35583344578337,-2.42992344313013,-0.197340781956707,0.559250857937254,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+195.890699393849,-1.3598563591665,-2.4319619575384,-0.193939950819617,0.560071141872462,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+196.890699393849,-1.36374012027598,-2.43427647086473,-0.191508298249208,0.560899182896706,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+197.890699393849,-1.3674874507318,-2.44704929805164,-0.189074940752827,0.561736632474136,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+198.890699393849,-1.37110107215397,-2.45946020855949,-0.186639971657488,0.562585120176978,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+199.890699393849,-1.37458370616248,-2.45700871251949,-0.185782386388422,0.563446243936071,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+200.890699393849,-1.37793807437734,-2.45431578859721,-0.186688312088871,0.564321572758687,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+201.890699393849,-1.38116689841853,-2.45951264950606,-0.18839753482519,0.565212649959131,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+202.890699393849,-1.38427289990606,-2.46652486588141,-0.189974776104725,0.566120993550793,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+203.890699393849,-1.38725880045994,-2.47331384392792,-0.191422421849257,0.567048098861894,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+204.890699393849,-1.39012732170015,-2.4781368791208,-0.192742857980569,0.567995434975292,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+205.890699393849,-1.3928811852467,-2.48421937548941,-0.193938470420443,0.568964456570196,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+206.890699393849,-1.39552311271959,-2.49049086878706,-0.195011645090657,0.569956597449339,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+207.890699393849,-1.39805582573881,-2.49663386667442,-0.195631445416099,0.570973260848559,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+208.890699393849,-1.40048204592436,-2.50265341296653,-0.192005420000353,0.572015814835857,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+209.890699393849,-1.40280449489625,-2.50855455147843,-0.194881073198079,0.573085593789411,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+210.890699393849,-1.40502589427447,-2.50601570650667,-0.197597212489137,0.574183897150347,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+211.890699393849,-1.40714896567902,-2.51038523029456,-0.198090076575355,0.575311993781705,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+212.890699393849,-1.4091764307299,-2.52135476455248,-0.198473276068223,0.576471116371499,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+213.890699393849,-1.4111110110471,-2.52178363447755,-0.198731421707951,0.577662458549325,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+214.890699393849,-1.41295542825064,-2.52420389821148,-0.198752529417839,0.5788871722939,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+215.890699393849,-1.4147124039605,-2.52877595434748,-0.19867064476707,0.58014637428208,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+216.890699393849,-1.41638465979669,-2.53315894363051,-0.195365194149146,0.581441169984771,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+217.890699393849,-1.41797491737919,-2.53542450651225,-0.191983131789403,0.582772649358342,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+218.890699393849,-1.41948589832803,-2.53614378824742,-0.188536561158051,0.584141860295406,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+219.890699393849,-1.42092032426318,-2.53678269403241,-0.185028407160915,0.585549809427971,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+220.890699393849,-1.42228091680466,-2.53734385660438,-0.181461594703823,0.586997464520152,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+221.890699393849,-1.42357039757246,-2.5378731467765,-0.177839048692601,0.588485754603878,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+222.890699393849,-1.42479148818657,-2.53833284016334,-0.174163694033078,0.590015565682569,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+223.890699393849,-1.425946910267,-2.5387218779347,-0.170436967352055,0.591587740696214,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+224.890699393849,-1.42703938543375,-2.53904282647762,-0.166532103171426,0.593203077006262,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+225.890699393849,-1.42807163530682,-2.53929825217911,-0.162424127945151,0.594862328195017,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+226.890699393849,-1.4290463815062,-2.54085845758386,-0.158210727957443,0.59656620134864,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+227.890699393849,-1.42996634565189,-2.54394609571886,-0.146822592399538,0.598315354992526,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+228.890699393849,-1.43083424936389,-2.54082214914453,-0.147006388339558,0.600110400316598,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+229.890699393849,-1.43165281426221,-2.53933027679757,-0.146211003488414,0.601951900912341,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+230.890699393849,-1.43242476196684,-2.53926491971031,-0.146011266154224,0.603840376787091,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+231.890699393849,-1.43315281409777,-2.54018266845531,-0.145446372828104,0.605776305211779,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+232.890699393849,-1.43383969227501,-2.54408018678301,-0.139011617498763,0.607760105767396,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+233.890699393849,-1.43448811811856,-2.54795105325383,-0.12978421252394,0.609792141883461,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+234.890699393849,-1.43510081324842,-2.55188056604421,-0.125576540718876,0.611872711066971,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+235.890699393849,-1.43568049928458,-2.55422333709337,-0.11787289196813,0.614002049091631,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+236.890699393849,-1.43622989784705,-2.55301724954064,-0.104472835062903,0.616180343879077,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+237.890699393849,-1.43675173055581,-2.55701847330457,-0.0951525543283898,0.618407745086126,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+238.890699393849,-1.43724871903088,-2.5627124794067,-0.0949299238446411,0.620684360596202,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+239.890699393849,-1.43772358489225,-2.5696853544078,-0.0931606604334016,0.623010262065232,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+240.890699393849,-1.43817904975992,-2.57093750532853,-0.0881128370041768,0.625385507714831,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+241.890699393849,-1.43861783525388,-2.57253373237781,-0.0857390417421588,0.627810128401027,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+242.890699393849,-1.43904266299415,-2.57697605666857,-0.0833427803022693,0.630284132869713,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+243.890699393849,-1.43945625460071,-2.5859994212837,-0.0864711601756601,0.632807498748528,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+244.890699393849,-1.43986133169356,-2.58973541381406,-0.0841464980458624,0.635380157237942,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+245.890699393849,-1.44026061589271,-2.5894243615061,-0.0799116027298724,0.638001986037661,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+246.890699393849,-1.44065682881816,-2.59719769570941,-0.0754673260554208,0.640672837602104,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+247.890699393849,-1.4410523918148,-2.59498994668196,-0.0705119472570133,0.64339255438135,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+248.890699393849,-1.44144795384958,-2.59417772461517,-0.067018904150157,0.646160973389039,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+249.890699393849,-1.44184351588437,-2.60486354665519,-0.0629042949284138,0.648977877234657,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+250.890699393849,-1.44223907791916,-2.60541973551871,-0.0586903811375163,0.651842997223306,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+251.890699393849,-1.44263463995395,-2.60768208224211,-0.0544461368190469,0.654756031284587,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+252.890699393849,-1.44303020198873,-2.6135779481531,-0.0486178795966662,0.657716649642814,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+253.890699393849,-1.44342576402352,-2.61923167401265,-0.0422463405918577,0.660724506925973,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+254.890699393849,-1.44382132605831,-2.62484655606297,-0.0410916626332507,0.663779236252816,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+255.890699393849,-1.4442168880931,-2.63043807694617,-0.0293955354174819,0.666880453572518,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+256.890699393849,-1.44461245012788,-2.63447371654842,-0.0202708245854531,0.670027755625198,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+257.890699393849,-1.44500801216267,-2.63828478581198,-0.00597916884224197,0.673220701684369,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+258.890699393849,-1.44540357419746,-2.64209585507552,0.00839495185072299,0.676458815878081,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+259.890699393849,-1.44579913623225,-2.64590692433907,0.0229043558727985,0.679741617931076,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+260.890699393849,-1.44619469826704,-2.64834012593713,0.0332737777489039,0.683068630631023,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+261.890699393849,-1.44659026030182,-2.65352906286617,0.0295832133155302,0.68643936983152,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+262.890699393849,-1.44698582233661,-2.65734013212972,0.0323777848814851,0.689853336585161,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+263.890699393849,-1.4473813843714,-2.66115120139327,0.0442151630179681,0.693310019227091,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+264.890699393849,-1.44777694640619,-2.66696913810421,0.0606446971770189,0.696808895765818,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+265.890699393849,-1.44817250844097,-2.6702060886696,0.0646042850116775,0.700349433077807,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+266.890699393849,-1.44856807047576,-2.67920188877737,0.0740560923886423,0.703931091286064,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+267.890699393849,-1.44896363251055,-2.68531826411395,0.0787202199773134,0.707553326961696,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+268.890699393849,-1.44935919454534,-2.69143463945052,0.0923455342128198,0.711215592496421,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+269.890699393849,-1.44975475658012,-2.6975510147871,0.104846445626935,0.714917332014912,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+270.890699393849,-1.45015031861491,-2.70366739012368,0.111515103658568,0.718657990892025,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+271.890699393849,-1.4505458806497,-2.70440103259063,0.113109358741071,0.72243701848232,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+272.890699393849,-1.45094144268449,-2.70466771979662,0.114928728938762,0.726253868245208,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+273.890699393849,-1.45133700471927,-2.71671364234253,0.116797695504822,0.730107997271134,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+274.890699393849,-1.45173256675406,-2.72813289146999,0.126826118191954,0.733998866432551,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+275.890699393849,-1.45212812878885,-2.73424926680657,0.140387511458457,0.737925941111312,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+276.890699393849,-1.45252369082364,-2.7403794219656,0.153948904724958,0.741888691350072,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+277.890699393849,-1.45291925285842,-2.74658137947071,0.161093859731009,0.745886591442353,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+278.890699393849,-1.45331481489321,-2.75278252921099,0.167681960481135,0.749919116408202,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+279.890699393849,-1.453710376928,-2.75898289928414,0.174270061231261,0.753985744745348,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+280.890699393849,-1.45410593896279,-2.76518251778788,0.180952952119365,0.758085959880119,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+281.890699393849,-1.45450150099758,-2.76838983019485,0.187840709791916,0.762219250973294,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+282.890699393849,-1.45489706303237,-2.76674012899065,0.194728467464465,0.766385112478579,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+283.890699393849,-1.45529262506715,-2.76508976051017,0.201616225137019,0.770583044432718,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+284.890699393849,-1.45568818710194,-2.76932154485233,0.208503982809572,0.774812547334716,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+285.890699393849,-1.45608374913673,-2.78110509755748,0.215391740482121,0.779073125802753,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+286.890699393849,-1.45647931117151,-2.78046263461192,0.222279498154676,0.78336429134129,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+287.890699393849,-1.4568748732063,-2.78695420064004,0.229167255827228,0.787685562921355,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+288.890699393849,-1.45727043524109,-2.79380998601794,0.238265809473454,0.792036466193041,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+289.890699393849,-1.45766599727588,-2.80064664053899,0.251448505988555,0.796416533346008,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+290.890699393849,-1.45806155931067,-2.80746524209371,0.264704001130503,0.800825302674035,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+291.890699393849,-1.45845712134545,-2.81426686857264,0.278037339247654,0.805262318429987,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+292.890699393849,-1.45885268338024,-2.8210525978663,0.291370677364793,0.809727130610263,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+293.890699393849,-1.45924824541503,-2.82782350786523,0.304704015481946,0.814219295166432,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+294.890699393849,-1.45964380744982,-2.83458067645994,0.318037353599093,0.818738374583772,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+295.890699393849,-1.46003936948461,-2.84146546173641,0.331370691716239,0.823283937801303,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+296.890699393849,-1.46043493151939,-2.84931313807658,0.344704029833381,0.827855560159963,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+297.890699393849,-1.46083049355418,-2.85717190807628,0.358037367950529,0.8324528237152,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+298.890699393849,-1.46122605558897,-2.86500769712957,0.371370706067679,0.837075317065278,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+299.890699393849,-1.46162161762376,-2.87285463603782,0.384704044184825,0.841722635496912,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+300.890699393849,-1.46201717965854,-2.88070138533084,0.398037382301973,0.846394380970499,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+301.890699393849,-1.46241274169333,-2.88854797310634,0.411370720419119,0.851090161680069,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+302.890699393849,-1.46280830372812,-2.89238983518669,0.424704058536268,0.855809591968057,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+303.890699393849,-1.46320386576291,-2.89459767882178,0.438037396653418,0.860552292163513,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+304.890699393849,-1.46359942779769,-2.90128419962722,0.451370734770559,0.865317887775333,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+305.890699393849,-1.46399498983248,-2.90783516025586,0.46470407288771,0.870106009333985,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+306.890699393849,-1.46439055186727,-2.91421930336517,0.472199132721339,0.874916293607697,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+307.890699393849,-1.46478611390206,-2.92088474626248,0.478379997939142,0.879748380961041,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+308.890699393849,-1.46518167593684,-2.92756477792517,0.484560863156944,0.88460191246392,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+309.890699393849,-1.46557723797163,-2.93415829970904,0.492579096987184,0.889476534723616,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+310.890699393849,-1.46597280000642,-2.93983763873058,0.502615683146805,0.89437190053047,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+311.890699393849,-1.4663683620412,-2.94551697775212,0.514784014992274,0.899287668770863,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+312.890699393849,-1.466763924076,-2.95127968538202,0.528531349823207,0.904223504339521,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+313.890699393849,-1.46715948611078,-2.96105292894129,0.542278684654124,0.909179078043234,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+314.890699393849,-1.46755504814557,-2.96767179940875,0.55536398714198,0.914154067475905,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+315.890699393849,-1.46795061018036,-2.97442400044393,0.568080306375223,0.919148157315593,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+316.890699393849,-1.46834617221514,-2.98810022561526,0.580796625608458,0.924161037946716,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+317.890699393849,-1.46874173424993,-2.99430747376389,0.593512944841699,0.929192405275668,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+318.890699393849,-1.46913729628472,-3.00061038945806,0.606229264074939,0.934241960633187,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+319.890699393849,-1.46953285831951,-3.01050851155529,0.618945583308173,0.939309410693097,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+320.890699393849,-1.46992842035429,-3.02150185765783,0.631661902541423,0.944394467396224,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+321.890699393849,-1.47032398238908,-3.0327233219682,0.644378221774656,0.949496847864012,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+322.890699393849,-1.47071954442387,-3.04381054470906,0.657320637436624,0.954616274312303,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+323.890699393849,-1.47111510645866,-3.05473845017967,0.66966223575574,0.959752473965669,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+324.890699393849,-1.47151066849345,-3.06113770120684,0.682254293401828,0.964905178972345,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+325.890699393849,-1.47190623052823,-3.06664011646315,0.694846351047912,0.970074126319837,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+326.890699393849,-1.47230179256302,-3.0816926935735,0.707438408693989,0.975259057751248,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+327.890699393849,-1.47269735459781,-3.09302466340349,0.717802274106594,0.980459719682363,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+328.890699393849,-1.47309291663259,-3.10079937094829,0.724538951401076,0.985675863119564,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+329.890699393849,-1.47348847866738,-3.10777429341123,0.731275628695566,0.990907243578574,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+330.890699393849,-1.47388404070217,-3.11137382549536,0.740562547932129,0.996153621004105,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+331.890699393849,-1.47427960273696,-3.11621170563679,0.750879650847789,1.00141475969041,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+332.890699393849,-1.47467516477174,-3.13038093562875,0.761196753763456,1.0066904282028,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+333.890699393849,-1.47507072680653,-3.14037945919665,0.771513856679132,1.01198039930009,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+334.890699393849,-1.47546628884133,-3.1483775842219,0.781830959594799,1.01728444985811,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+335.890699393849,-1.47586185087611,-3.15637570924716,0.792278364911003,1.02260236079416,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+336.890699393849,-1.4762574129109,-3.16437383427242,0.802808787802716,1.0279339169925,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+337.890699393849,-1.47665297494569,-3.17413563583713,0.812262504072755,1.03327890723098,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+338.890699393849,-1.47704853698047,-3.18127567513923,0.821348412834233,1.03863712410853,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+339.890699393849,-1.47744409901526,-3.18802635624977,0.834162699545037,1.04400836397394,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+340.890699393849,-1.47783966105005,-3.19590888244105,0.844497414575083,1.04939242685554,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+341.890699393849,-1.47823522308483,-3.20817410679957,0.854832129605125,1.05478911639204,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+342.890699393849,-1.47863078511962,-3.22224805439405,0.865166844635182,1.06019823976441,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+343.890699393849,-1.47902634715441,-3.23632200198854,0.875672581106797,1.06561960762887,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+344.890699393849,-1.47942190918919,-3.25039594958302,0.886183873323949,1.07105303405096,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+345.890699393849,-1.47981747122399,-3.2644698971775,0.8966951655411,1.07649833644068,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+346.890699393849,-1.48021303325878,-3.27854384477198,0.907206457758259,1.08195533548869,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+347.890699393849,-1.48060859529356,-3.29261779236647,0.920224135056118,1.08742385510363,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+348.890699393849,-1.48100415732835,-3.30676546406097,0.934410345161601,1.09290372235049,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+349.890699393849,-1.48139971936313,-3.32096665891053,0.948596555267076,1.09839476739003,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+350.890699393849,-1.48179528139793,-3.33516785376009,0.962782765372554,1.10389682341926,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+351.890699393849,-1.48219084343271,-3.34936904860964,0.976968975478038,1.10940972661302,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+352.890699393849,-1.4825864054675,-3.36228532539462,0.991155185583507,1.11493331606654,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+353.890699393849,-1.48298196750229,-3.3749170377455,1.00534139568899,1.12046743373907,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+354.890699393849,-1.48337752953708,-3.38754875009639,1.01952760579446,1.1260119243985,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+355.890699393849,-1.48377309157186,-3.39390953545534,1.03371381589996,1.13156663556704,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+356.890699393849,-1.48416865360665,-3.39758853866903,1.04790002600542,1.13713141746788,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+357.890699393849,-1.48456421564144,-3.40126754188272,1.06208692072752,1.14270612297285,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"
+358.890699393849,-1.48495977767623,-3.4049465450964,1.07642026478878,1.14829060755101,"Third trimester blood-lead levels (BLLs) and plasma 
+total folate concentrations"

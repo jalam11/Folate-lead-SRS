@@ -1,0 +1,9 @@
+"x_name","z_value","z_name","z_level","beta","lb","ub","p_int","ci width"
+"Lead, t1",0,"mthfr677_dom","C|C",-0.1,-1.2,0.9,0.2096,2.1
+"Lead, t1",1,"mthfr677_dom","C|T or T|T",0.7,-0.3,1.7,0.2096,2
+"Lead, t3",0,"mthfr677_dom","C|C",-0.3,-1.3,0.7,0.264,2
+"Lead, t3",1,"mthfr677_dom","C|T or T|T",0.4,-0.7,1.5,0.264,2.2
+"Lead, t1",0,"mthfr677_rec","C|C or C|T",0.4,-0.4,1.1,0.9477,1.5
+"Lead, t1",1,"mthfr677_rec","T|T",0.4,-1.6,2.5,0.9477,4.1
+"Lead, t3",0,"mthfr677_rec","C|C or C|T",0,-0.8,0.7,0.3645,1.5
+"Lead, t3",1,"mthfr677_rec","T|T",1,-1.3,3.2,0.3645,4.4

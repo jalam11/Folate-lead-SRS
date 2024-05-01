@@ -1,0 +1,552 @@
+---
+title: "Folate interactions with MICE"
+author: "Josh Alampi"
+date: "2022-12-15"
+output: html_document
+---
+
+#load
+```{r}
+#clear workspace
+rm(list=ls(all=TRUE))
+
+#load packages
+library(readr); library(writexl) # for read_csv(); write_xlsx()  
+library(plyr) # mapvalues()
+library(MASS)
+library(dplyr)
+library(tidyr) # for gather()
+library(ggplot2)
+library(ggrepel); library(ggpubr); library(scales) # extra ggplot features
+library(signs) # for signs_format(), uses proper minus sign instead of hyphen
+library(lmtest) # for bptest()
+library(quantreg)
+library(bayesQR)
+select <- dplyr::select
+# library(rstan)
+# library(emg) # for exponentially modified gaussian model
+
+library(mice)
+
+data <- read.csv("//ais-fs1.sfu.ca/home2/Redirected_Profiles/jalampi/Desktop/MIREC loader 2022/clean data/2023-10-04_MIREC data.csv")
+
+data <- data %>% # restrict to only those with SRS scores
+  filter(is.na(srs) == F)
+
+```
+
+# make functions
+
+## Used for formatting results later
+```{r}
+pvalue_rounder_jama <- function(p) 
+{
+  require(dplyr)
+  formatted_p <- case_when(
+    p > 0.99 ~ "P>.99", # for P values greater than .99, report as "P>.99."
+    p <= 0.99 & p > 0.05 ~ format(round(p, 2), nsmall = 2), # or P values greater than or equal to .01, report the value to the nearest hundredth
+    p <= 0.05 & p >= 0.01 ~ paste0(format(round(p, 2), nsmall = 2), "*"),
+    p < 0.01 & p >= 0.001 ~ paste0(format(round(p, 3), nsmall = 3), "*"), # for P values between .001 and .01, report the value to the nearest thousandth;
+    p < 0.001 ~ "P<.001" # for P values less than .001, report as "P<.001"
+  )
+  
+  return(formatted_p)
+}
+```
+
+## no interactions
+```{r}
+get_mice_res <- function(mira_object, alpha = 0.05, round = 1, name_x = "") {
+  
+  # make container to store results
+  table <- setNames(data.frame(matrix(data = NA, 
+                                      nrow = 1, 
+                                      ncol = 9)), #make dataframe
+                    c("x_name", "z_value", "z_name", "z_level", 
+                      "beta", "lb", "ub", "p_int", "ci width")) #set column names
+  
+  # store parameters
+  res_pooled <- pool(mira_object)
+  summary <- summary(res_pooled)
+
+  beta <- summary$estimate[2]
+  se <- summary$std.error[2]
+  
+  # calculate CIs
+  df <- summary$df[2]
+  t <- qt(1 - (alpha / 2), df)
+  
+  lb <- beta - (t * se)
+  ub <- beta + (t * se)
+  
+  # store results
+  table[1,1] <- name_x
+  table[1,2] <- NA
+  table[1,3] <- "All"
+  table[1,4] <- NA
+  table[1,5] <- round(beta, round) # beta coef
+  table[1,6] <- round(lb, round) # lb
+  table[1,7] <- round(ub, round) # ub
+  table[1,8] <- NA
+  table[1,9] <- round(ub - lb, round)  # ci width
+  
+  return(table)
+}
+
+```
+
+## binary or cnts z
+```{r}
+get_mice_res_int <- function(mira_object, alpha = 0.05,
+                             round = 1, round_p = 4, name_x = "", name_z = "", 
+                             levels = c(0, 1), level_names = c("","")) {
+  
+  # make container to store results
+  table_int <- setNames(data.frame(matrix(data = NA, 
+                                          nrow = 2, 
+                                          ncol = 9)), #make dataframe
+                        c("x_name", "z_value", "z_name", "z_level", 
+                          "beta", "lb", "ub", "p_int", "ci width")) #set column names
+  
+  # prep z variable
+  lvl1 <- levels[1] 
+  lvl2 <- levels[2]
+  
+  name_lvl1 <- paste0(level_names[1])
+  name_lvl2 <- paste0(level_names[2])
+  
+  # store model parameters
+  res_pooled <- pool(mira_object)
+  summary <- summary(res_pooled)
+  
+  beta_x <- summary$estimate[2]
+  beta_xz <- rev(summary$estimate)[1] # selects last entry
+  
+  p_int <- rev(summary$p.value)[1] # selects last entry
+  
+  # calculate variance-covariance matrix (Using Rubin's rules)
+  m <- res_pooled$m
+  ubar <- Reduce("+", lapply(mira_object$analyses, vcov)) / (m)
+  b <- res_pooled$pooled$b 
+  vcov <- ubar + (1 + 1 / (m)) * b
+  
+  # store values needed for calculating intervals
+  var_x <- diag(vcov)[2] 
+  var_xz <- rev(diag(vcov))[1] # selects last entry
+  cov_x_xz <- rev(vcov[,2])[1] # selects the last entry of the 2nd column
+  
+  df <- summary$df[2]
+  t <- qt(1 - (alpha / 2), df) 
+
+  # calculate beta and 95% intervals
+  beta_lvl1 <- beta_x + beta_xz*lvl1 # just equals beta_x when lvl1 = 0 (default)
+  beta_lvl2 <- beta_x + beta_xz*lvl2
+  
+  lb_lvl1 <- beta_lvl1 - ( t * sqrt(var_x + (lvl1)^2 * var_xz + 2 * lvl1 * cov_x_xz) )
+  ub_lvl1 <- beta_lvl1 + ( t * sqrt(var_x + (lvl1)^2 * var_xz + 2 * lvl1 * cov_x_xz) )
+  
+  lb_lvl2 <- beta_lvl2 - ( t * sqrt(var_x + (lvl2)^2 * var_xz + 2 * lvl2 * cov_x_xz) )
+  ub_lvl2 <- beta_lvl2 + ( t * sqrt(var_x + (lvl2)^2 * var_xz + 2 * lvl2 * cov_x_xz) )
+  
+  # store results
+  table_int[1, 1] <- name_x
+  table_int[1, 2] <- lvl1
+  table_int[1, 3] <- name_z
+  table_int[1, 4] <- name_lvl1
+  table_int[1, 5] <- round(beta_lvl1, round) # beta coef
+  table_int[1, 6] <- round(lb_lvl1, round) # lb
+  table_int[1, 7] <- round(ub_lvl1, round) # ub
+  table_int[1, 8] <- round(p_int, round_p) # p value for interaction
+  table_int[1, 9] <- round(ub_lvl1-lb_lvl1, round) # ci width
+  
+  table_int[2, 1] <- name_x
+  table_int[2, 2] <- lvl2
+  table_int[2, 3] <- name_z
+  table_int[2, 4] <- name_lvl2
+  table_int[2, 5] <- round(beta_lvl2, round) # beta coef
+  table_int[2, 6] <- round(lb_lvl2, round) # lb
+  table_int[2, 7] <- round(ub_lvl2, round) # ub
+  table_int[2, 8] <- round(p_int, round_p) # p value for interaction
+  table_int[2, 9] <- round(ub_lvl2-lb_lvl2, round) # CI width
+  
+  return(table_int)
+}
+```
+
+## categorical Z with 3 levels
+```{r}
+get_mice_res_intcat3 <- function(mira_object, alpha = 0.05,
+                             round = 1, round_p = 4, name_x = "", name_z = "", 
+                             level_names = c("","","")) {
+  
+  # make container to store results
+  table_int <- setNames(data.frame(matrix(data = NA, 
+                                          nrow = 3, 
+                                          ncol = 9)), #make dataframe
+                        c("x_name", "z_value", "z_name", "z_level", 
+                          "beta", "lb", "ub", "p_int", "ci width")) #set column names
+  
+  # prep z variable
+  # lvl1 <- levels[1] 
+  # lvl2 <- levels[2]
+  # lvl3 <- levels[3]
+  
+  name_lvl1 <- paste0(level_names[1])
+  name_lvl2 <- paste0(level_names[2])
+  name_lvl3 <- paste0(level_names[3])
+  
+  # store model parameters
+  res_pooled <- pool(mira_object)
+  summary <- summary(res_pooled)
+  
+  beta_x <- summary$estimate[2]
+  beta_xz2 <- rev(summary$estimate)[2] # selects the second-last entry
+  beta_xz3 <- rev(summary$estimate)[1] # selects the last entry
+  
+  p_int_xz2 <- rev(summary$p.value)[2] # selects the second-last entry
+  p_int_xz3 <- rev(summary$p.value)[1] # selects the last entry
+  
+  # calculate variance-covariance matrix (Using Rubin's rules)
+  m <- res_pooled$m
+  ubar <- Reduce("+", lapply(mira_object$analyses, vcov)) / (m)
+  b <- res_pooled$pooled$b 
+  vcov <- ubar + (1 + 1 / (m)) * b
+  
+  # store values needed for calculating intervals
+  var_x <- diag(vcov)[2] 
+  
+  var_xz2 <- rev(diag(vcov))[2] # selects the second-last entry
+  var_xz3 <- rev(diag(vcov))[1] # selects the last entry
+  
+  cov_x_xz2 <- rev(vcov[,2])[2] # selects the second-last entry of the 2nd column
+  cov_x_xz3 <- rev(vcov[,2])[1] # selects the last entry of the 2nd column
+  
+  df <- summary$df[2]
+  t <- qt(1 - (alpha / 2), df) 
+
+  # calculate beta and 95% intervals
+  beta_lvl1 <- beta_x  # just equals beta_x when lvl1 = 0 (default)
+  beta_lvl2 <- beta_x + beta_xz2
+  beta_lvl3 <- beta_x + beta_xz3
+  
+  lb_lvl1 <- beta_lvl1 - ( t * sqrt(var_x))
+  ub_lvl1 <- beta_lvl1 + ( t * sqrt(var_x))
+  
+  lb_lvl2 <- beta_lvl2 - ( t * sqrt(var_x + var_xz2 + 2*cov_x_xz2) )
+  ub_lvl2 <- beta_lvl2 + ( t * sqrt(var_x + var_xz2 + 2*cov_x_xz2) )
+  
+  lb_lvl3 <- beta_lvl3 - ( t * sqrt(var_x + var_xz3 + 2*cov_x_xz3) )
+  ub_lvl3 <- beta_lvl3 + ( t * sqrt(var_x + var_xz3 + 2*cov_x_xz3) )
+  
+  # store results
+  table_int[1, 1] <- name_x
+  table_int[1, 2] <- NA
+  table_int[1, 3] <- name_z
+  table_int[1, 4] <- name_lvl1
+  table_int[1, 5] <- round(beta_lvl1, round) # beta coef
+  table_int[1, 6] <- round(lb_lvl1, round) # lb
+  table_int[1, 7] <- round(ub_lvl1, round) # ub
+  table_int[1, 8] <- NA
+  table_int[1, 9] <- round(ub_lvl1 - lb_lvl1, round) # CI width
+  
+  table_int[2, 1] <- name_x
+  table_int[2, 2] <- NA
+  table_int[2, 3] <- name_z
+  table_int[2, 4] <- name_lvl2
+  table_int[2, 5] <- round(beta_lvl2, round) # beta coef
+  table_int[2, 6] <- round(lb_lvl2, round) # lb
+  table_int[2, 7] <- round(ub_lvl2, round) # ub
+  table_int[2, 8] <- round(p_int_xz2, round_p) # p value for interaction
+  table_int[2, 9] <- round(ub_lvl2 - lb_lvl2, round) # ci width
+  
+  table_int[3, 1] <- name_x
+  table_int[3, 2] <- NA
+  table_int[3, 3] <- name_z
+  table_int[3, 4] <- name_lvl3
+  table_int[3, 5] <- round(beta_lvl3, round) # beta coef
+  table_int[3, 6] <- round(lb_lvl3, round) # lb
+  table_int[3, 7] <- round(ub_lvl3, round) # ub
+  table_int[3, 8] <- round(p_int_xz3, round_p) # p value for interaction
+  table_int[3, 9] <- round(ub_lvl3 - lb_lvl3, round) # ci width
+  
+  return(table_int)
+}
+```
+
+# clean data
+
+## Define reference levels
+The level that is the most common will be the reference level
+```{r}
+data$fol.intake3 <- factor(data$fol.intake3, levels = c(2, 1, 3))
+
+data$city10 <- factor(data$city10, levels = c(9,1,2,3,4,5,6,7,8,10)) # Montreal is Reference
+data$edu4 <- factor(data$edu4, levels = c(3,1,2,4)) # undergrad is reference
+data$income4 <- factor(data$income4, levels= c(4,1,2,3)) # >100K is reference
+# data$mom.age3 <- factor(data$mom.age3, levels= c(2,1,3)) # 30-39 years old is reference # CUT
+data$parity3 <- factor(data$parity3, levels= c(1,2,3)) #nulliparous is reference
+
+data <- mutate(data, year.enroll4 = year.enroll4 - 2007)
+data$year.enroll4 <- factor(data$year.enroll4, levels = c(3, 1, 2, 4)) # 2010 is reference
+
+```
+
+```{r}
+data$mthfr677_cat <- factor(data$mthfr677_cat, levels = c("C|C", "C|T", "T|T"))
+```
+
+## make mean = zero for the cnts confounding variables
+```{r}
+data <- mutate(data, home.score = home.score - mean(home.score, na.rm = T))
+data <- mutate(data, srs.age = srs.age - mean(srs.age, na.rm = T))
+data <- mutate(data, mom.age = mom.age - mean(mom.age))
+```
+
+
+## Make new folate variables
+10th and 80th percentiles will be used for the main analysis
+20th percentile will be used for three way interaction analysis
+```{r}
+# define the cutoffs for the plasma-folate variable
+pl_fol_10.t1 <- quantile(data$tot_fol.t1, 0.1, na.rm = T)
+pl_fol_80.t1 <- quantile(data$tot_fol.t1, 0.8, na.rm = T)
+
+pl_fol_20.t1 <- quantile(data$tot_fol.t1, 0.2, na.rm = T)
+
+# make new categorical variable
+data <- data %>% 
+  mutate(pl_fol3.t1 = case_when(tot_fol.t1 < pl_fol_10.t1 ~ 1,
+                                tot_fol.t1 >= pl_fol_10.t1 & tot_fol.t1 < pl_fol_80.t1 ~2,
+                                tot_fol.t1 >= pl_fol_80.t1 ~ 3) ) %>% 
+  mutate(pl_fol2.t1 = ifelse(tot_fol.t1 >= pl_fol_20.t1, "high", "low"))
+
+data$pl_fol3.t1 <- factor(data$pl_fol3.t1, levels = c(2, 1, 3))
+
+
+# define the cutoffs for the plasma-folate variable
+pl_fol_10.t3 <- quantile(data$tot_fol.t3, 0.1, na.rm = T)
+pl_fol_80.t3 <- quantile(data$tot_fol.t3, 0.8, na.rm = T)
+
+pl_fol_20.t3 <- quantile(data$tot_fol.t3, 0.2, na.rm = T)
+
+# make new categorical variable
+data <- data %>% 
+  mutate(pl_fol3.t3 = case_when(tot_fol.t3 < pl_fol_10.t3 ~ 1,
+                                tot_fol.t3 >= pl_fol_10.t3 & tot_fol.t3 < pl_fol_80.t3 ~2,
+                                tot_fol.t3 >= pl_fol_80.t3 ~ 3) ) %>% 
+  mutate(pl_fol2.t3 = ifelse(tot_fol.t3 >= pl_fol_20.t3, "high", "low")) 
+
+data$pl_fol3.t3 <- factor(data$pl_fol3.t3, levels = c(2, 1, 3))
+
+```
+
+## remove variables that MICE should ignore
+The following auxiliary variables will be used:
+alc2 (consumed alcohol during pregnancy or not), mom.birthplace5, prepreg.bmi, 3 metals (As, Cd, Hg) measured at first and third trimesters, and the folate vitamers (umfa, 5-mTHF, sum of non-methylated folate) measured at the first and third trimesters.
+```{r}
+data <- data %>% # remove indicator variables for the genes (duplicates)
+  select(-c(mthfr677_pp, mthfr677_pq, mthfr677_qq, mthfr1298_pp, mthfr1298_pq, mthfr1298_qq, 
+            mtrr_pp, mtrr_pq, mtrr_qq, tcn2_pp, tcn2_pq, tcn2_qq))
+
+data <- data %>% # remove variables that are duplicates of variables that will be used in the analysis
+  select(-c(subject.id, lbw2, live.birth2, num.babies3,
+            couple3, edu8, income12, living.status5, married7, married2, mom.age3, mom.age5,
+            smoker4, site11, 
+            fol_quest2, fol.intake2, fol.intake4,
+            fol.intake, tot_fol.t1, tot_fol.t3))
+
+data <- data %>% # remove below LOD flags (not needed for analysis)
+  select(-c(umfa.t1.flag:mefox.t1.flag)) %>% 
+  select(-c(umfa.t3.flag:mefox.t3.flag)) %>% 
+  select(-c(arsenic.t1.flag, cadmium.t1.flag, lead.t1.flag, manganese.t1.flag, mercury.t1.flag,
+            arsenic.t3.flag, cadmium.t3.flag, lead.t3.flag, manganese.t3.flag, mercury.t3.flag))
+
+# remove remaining variables that were never considered for the analysis
+data <- data %>% 
+  select(-c(high_bp:gerd)) %>% 
+  select(-c(arsenic.t4.flag:mercury.t4.res))
+
+data <- data %>% # remove non-methylated folate vitamer concentrations 
+  select(-c(five_fTHF.t1.res, thf.t1.res, five_10_mnTHF.t1.res, mefox.t1.res,
+            five_fTHF.t3.res, thf.t3.res, five_10_mnTHF.t3.res, mefox.t3.res))
+
+data <- data %>% # remove variables that are not good candidates for being an auxiliary variable
+  select(-c(birth.length, birth.wt, gest.age, lga2, sga2, 
+            race.aboriginal2, race.asian2, race.black2, race.latin2, race.other2,
+            mthfr1298_cat, mtrr_cat, tcn2_cat,
+            manganese.t1.res, manganese.t3.res))
+
+data <- data %>% # remove duplicates of the auxiliary variables
+  select(-c(obese2, prepreg.bmi4, mom.birthplace2, alc))
+
+```
+
+
+## Move useful vars to the front
+```{r}
+data <- data %>% 
+  select(c(lead.t1.res, lead.t3.res, 
+           sex2, 
+           fol.intake3, 
+           pl_fol3.t1, pl_fol3.t3,
+           mthfr677_cat, 
+           srs, 
+           everything()))
+```
+
+## log2 transform blood lead levels
+```{r}
+data <- data %>% 
+  mutate(lead.t1.res = log2(lead.t1.res)) %>% 
+  mutate(lead.t3.res = log2(lead.t3.res)) 
+```
+
+
+# implement MICE
+```{r}
+m <- 10
+
+mice_data <- mice(data, m = m, printFlag = F, seed = 1010)
+
+```
+
+
+# analysis
+
+## prep
+```{r}
+list_level_names.t1 <- list(c("Boys", "Girls"), 
+                            c("400 - 1000 μg/day", "<400 μg/day", ">1000 μg/day"),
+                            c("10ᵗʰ - 80ᵗʰ percentile", "<10ᵗʰ percentile (65.6 nmol/L)", "≥80ᵗʰ percentile (125 nmol/L)"),
+                            c("C|C", "C|T", "T|T"))
+
+
+level_names_gene_rec <- 
+
+list_level_names.t3 <- list(c("Boys", "Girls"), 
+                            c("400 - 1000 μg/day", "<400 μg/day", ">1000 μg/day"),
+                            c("10ᵗʰ - 80ᵗʰ percentile", "<10ᵗʰ percentile (49.3 nmol/L)", "≥80ᵗʰ percentile (158 nmol/L)"),
+                            c("C|C", "C|T", "T|T"))
+```
+
+
+## main
+```{r}
+# Models with no interaction terms
+table_noint <- setNames(data.frame(matrix(data = NA, nrow = 2,
+                                          ncol = 9)), #make data.t1frame
+                        c("x_name", "z_value", "z_name", "z_level",
+                          "beta", "lb", "ub", "p_int", "ci width")) #set column names
+
+
+name_x <- "Lead, t1"
+model_mice <- with(mice_data, lm(srs ~ lead.t1.res + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_noint[1,] <- get_mice_res(model_mice, name_x = name_x)
+
+name_x <- "Lead, t3"
+model_mice <- with(mice_data, lm(srs ~ lead.t3.res + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_noint[2,] <- get_mice_res(model_mice, name_x = name_x)
+
+
+# Models with interaction terms
+
+# x = First trimester lead levels
+
+## z = child sex
+model_mice_int <- with(mice_data, lm(srs ~ lead.t1.res + sex2 + lead.t1.res:sex2 + income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_int <- get_mice_res_int(model_mice_int, name_z = "sex2", name_x = "Lead, t1", 
+                              level_names = list_level_names.t1[[1]])
+
+## z = folic acid supplementation
+model_mice_int <- with(mice_data, lm(srs ~ lead.t1.res + fol.intake3 + lead.t1.res:fol.intake3 + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_intcat3(model_mice_int, name_z = "fol.intake3", name_x = "Lead, t1", 
+                              level_names = list_level_names.t1[[2]])
+table_int <- rbind(table_int, table_tmp)
+
+## z = first trimester plasma-folate
+model_mice_int <- with(mice_data, lm(srs ~ lead.t1.res + pl_fol3.t1 + lead.t1.res:pl_fol3.t1 + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_intcat3(model_mice_int, name_z = "pl_fol3.t1", name_x = "Lead, t1", 
+                              level_names = list_level_names.t1[[3]])
+table_int <- rbind(table_int, table_tmp)
+
+## z = MTHFR 677 C>T genotype
+model_mice_int <- with(mice_data, lm(srs ~ lead.t1.res + mthfr677_cat + lead.t1.res:mthfr677_cat + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_intcat3(model_mice_int, name_z = "mthfr677_cat", name_x = "Lead, t1", 
+                              level_names = list_level_names.t1[[4]])
+table_int <- rbind(table_int, table_tmp)
+
+# x = Third trimester lead levels
+
+## z = child sex
+model_mice_int <- with(mice_data, lm(srs ~ lead.t3.res + sex2 + lead.t3.res:sex2 + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_int(model_mice_int, name_z = "sex2", name_x = "Lead, t3", 
+                              level_names = list_level_names.t3[[1]])
+table_int <- rbind(table_int, table_tmp)
+
+## z = folic acid supplementation
+model_mice_int <- with(mice_data, lm(srs ~ lead.t3.res + fol.intake3 + lead.t3.res:fol.intake3 + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_intcat3(model_mice_int, name_z = "fol.intake3", name_x = "Lead, t3", 
+                                  level_names = list_level_names.t3[[2]])
+table_int <- rbind(table_int, table_tmp)
+
+## z = Third trimester plasma-folate
+model_mice_int <- with(mice_data, lm(srs ~ lead.t3.res + pl_fol3.t3 + lead.t3.res:pl_fol3.t3 + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_intcat3(model_mice_int, name_z = "pl_fol3.t3", name_x = "Lead, t3", 
+                                  level_names = list_level_names.t3[[3]])
+table_int <- rbind(table_int, table_tmp)
+
+## z = MTHFR 677 C>T genotype
+model_mice_int <- with(mice_data, lm(srs ~ lead.t3.res + mthfr677_cat + lead.t3.res:mthfr677_cat + sex2+ income4+ edu4+ living.status2+ home.score+ race.white2+ mom.age+ parity3+ city10+ year.enroll4 + smoker2 + srs.age))
+table_tmp <- get_mice_res_intcat3(model_mice_int, name_z = "mthfr677_cat", name_x = "Lead, t3", 
+                                  level_names = list_level_names.t3[[4]])
+table_int <- rbind(table_int, table_tmp)
+
+table_main <- rbind(table_noint, table_int)
+
+table_main
+rm(table_tmp, table_int, table_noint)
+```
+
+
+# Save
+```{r}
+#save as a csv file
+write.csv(table_main, row.names = F, file = paste0("moderation_code/raw results/moderation results_main", 
+                                                  "_",  Sys.Date(), ".csv", sep = ""))
+```
+
+
+# Clean main results
+```{r}
+
+table_main$z_name <- factor(table_main$z_name, c("All", "sex2", 
+                                     "fol.intake3",
+                                     "pl_fol3.t1", "pl_fol3.t3", 
+                                     "plasma-folate",
+                                     "mthfr677_cat"))
+
+
+res_all <- table_main %>% 
+  mutate(res = paste0(format(beta, nsmall = 1), 
+                      " (", 
+                      format(lb, nsmall = 1), 
+                      ", " ,
+                      format(ub, nsmall = 1), 
+                      ")" ) ) %>% # combine beta, lb, ub
+  mutate(p_int_v2 = pvalue_rounder_jama(table_main$p_int)) %>% # fix p-value formatting
+  mutate(p_int_v2 = ifelse(is.na(p_int) == T, 
+                           "-", # add a dash when no p_int value is recorded
+                           p_int_v2)) %>%  
+  select(c(x_name, z_name, z_level, res, p_int_v2)) %>% 
+  mutate(z_level = paste0("   ", z_level))
+```
+
+# save cleaned results
+```{r}
+#save as a MS excel file
+write_xlsx(res_all, path = paste0("moderation_code/results/res_main", "_",  Sys.Date(), ".xlsx", sep = ""))
+```
+
+```{r}
+
+```
