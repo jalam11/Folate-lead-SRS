@@ -1,0 +1,142 @@
+---
+title: "FA supp dist by source"
+author: "Josh Alampi"
+date: "2024-04-05"
+output: html_document
+---
+
+# load
+```{r}
+#clear workspace
+rm(list=ls(all=TRUE))
+
+
+#load packages
+library(readr); library(writexl) # for read_csv(); write_xlsx()  
+library(plyr) # mapvalues()
+library(MASS)
+library(dplyr)
+library(tidyr) # for gather()
+# library(ggplot2)
+# library(ggrepel); library(ggpubr); library(scales) # extra ggplot features
+# library(signs) # for signs_format(), uses proper minus sign instead of hyphen
+# library(lmtest) # for bptest()
+# library(quantreg)
+# library(bayesQR)
+select <- dplyr::select
+# library(rstan)
+# library(emg) # for exponentially modified gaussian model
+
+library(EnvStats)
+
+data <- read.csv("//ais-fs1.sfu.ca/home2/Redirected_Profiles/jalampi/Desktop/MIREC loader 2022/clean data/2024-04-02_MIREC data.csv")
+```
+
+# clean
+```{r}
+data <- data %>% 
+  filter(is.na(srs) == F) %>% 
+  mutate(all = 1) # make a variable where all participants are coded as == 1. 
+
+data <- data %>% 
+  mutate(fa_source5 = case_when(fol.intake_scenario == "1/2" ~ 1, # NSF2-30D
+                                fol.intake_scenario %in% c("3C", "4C", "4D") ~ 2, # NSF1-24HR
+                                fol.intake_scenario %in% c("4A", "4B") ~ 3, # Baseline questionnaire
+                                fol.intake_scenario %in% c("3A", "3B") ~ 4, # NSF2-30D cross referenced with NSF1-24HR
+                                fol.intake_scenario %in% c("3D", "4E") ~ 5)) %>% # NSF1-24HR cross referenced with the baseline questionnaire
+  mutate(fa_source3 = case_when(fol.intake_scenario %in% c("1/2", "3A", "3B") ~ 1, # Based on 30d recall
+                                fol.intake_scenario %in% c("3C", "3D", "4C", "4D", "4E") ~ 2, # Based on 24hr recall
+                                fol.intake_scenario %in% c("4A", "4B")  ~ 3)) # Based on baseline questionnaire
+
+
+```
+
+# Make function
+Editing the function I used for table 1
+```{r}
+get_ds <- function(data, var, level, name, round = 1, round_fa = 0) {
+  tot_n <- nrow(data)
+  if(level == "NA"){
+    subset_data <- filter(data, is.na({{var}}) == T)
+  } else {
+    subset_data <- filter(data, {{var}} == {{level}})
+  }
+  
+  n <- nrow(subset_data)
+  perc <- format(round(n/tot_n*100, round), nsmall = round)
+  
+  fa_50 <- format(round(quantile(subset_data$fol.intake, 0.50, na.rm = T), round_fa), nsmall = round_fa)
+  fa_25 <- format(round(quantile(subset_data$fol.intake, 0.25, na.rm = T), round_fa), nsmall = round_fa)
+  fa_75 <- format(round(quantile(subset_data$fol.intake, 0.75, na.rm = T), round_fa), nsmall = round_fa)
+  
+  n_fa_under400 <- subset_data %>% 
+    filter(fol.intake3 == 1) %>% 
+    nrow()
+  
+  n_fa_400to1000 <- subset_data %>% 
+    filter(fol.intake3 == 2) %>% 
+    nrow()
+  
+  n_fa_over1000 <- subset_data %>% 
+    filter(fol.intake3 == 3) %>% 
+    nrow()
+  
+  perc_fa_under400 <- format(round(n_fa_under400/n * 100, round), nsmall = round)
+  perc_fa_400to1000 <- format(round(n_fa_400to1000/n * 100, round), nsmall = round)
+  perc_fa_over1000 <- format(round(n_fa_over1000/n * 100, round), nsmall = round)
+  
+  mat <- matrix(data=NA, nrow = 1, ncol = 6)
+  mat[1,1] <- (paste0("   ", name))
+  mat[1,2] <- paste0(n, " (", perc, ")") # n, percentage
+  mat[1,3] <- paste0(fa_50, " (", fa_25, ", ", fa_75, ")") # continuous FA supp median + IQR
+  mat[1,4] <- paste0(n_fa_under400, " (", perc_fa_under400, ")")
+  mat[1,5] <- paste0(n_fa_400to1000, " (", perc_fa_400to1000, ")")
+  mat[1,6] <- paste0(n_fa_over1000, " (", perc_fa_over1000, ")")
+  
+  return(mat)
+}
+```
+
+# analysis
+## Make table
+```{r}
+tableS1 <- setNames(data.frame(matrix(data = NA, nrow = 5, ncol = 6)), #make dataframe
+                              c("Variable", "n (%)", "Median FA supplementation (25th, 75th percentile)",
+                                "<400 µg/day", "400 - 1000 µg/day", ">1000 µg/day")) #set column names
+```
+
+## enter info
+```{r}
+i <- 1
+tableS1[i,] <- get_ds(data, all, 1, "Total"); i <- i + 1
+
+tableS1[i,1] <- "Folic acid supplementation information source"; i <- i + 1
+
+tableS1[i,] <- get_ds(data, fa_source3, 1, "30-day recall form or 30-day recall form cross-referenced with 24-hour recall form"); i <- i + 1
+tableS1[i,] <- get_ds(data, fa_source3, 2, "24-hour recall form or 24-hour recall form cross-referenced with the baseline questionnaire"); i <- i + 1
+tableS1[i,] <- get_ds(data, fa_source3, 3, "Baseline questionnaire"); i <- i + 1
+```
+
+
+
+
+# save
+```{r}
+#save as a MS excel file
+write_xlsx(tableS1, path = paste0("descriptive stats/results/table_FA supp source", "_",  Sys.Date(), ".xlsx", sep = ""))
+
+```
+
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+

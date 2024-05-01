@@ -1,0 +1,135 @@
+---
+title: "pl fol and lead distribution"
+author: "Josh Alampi"
+date: "2022-07-22"
+output: html_document
+---
+
+# load
+```{r}
+#clear workspace
+rm(list=ls(all=TRUE))
+
+#load packages
+library(readr); library(writexl) # for read_csv(); write_xlsx()  
+library(plyr) # mapvalues()
+library(MASS)
+library(dplyr)
+library(tidyr) # for gather()
+library(ggplot2)
+library(ggrepel); library(ggpubr); library(scales) # extra ggplot features
+library(signs) # for signs_format(), uses proper minus sign instead of hyphen
+library(lmtest) # for bptest()
+library(quantreg)
+library(bayesQR)
+select <- dplyr::select
+# library(rstan)
+# library(emg) # for exponentially modified gaussian model
+
+# data <- read.csv("//ais-fs1.sfu.ca/home2/Redirected_Profiles/jalampi/Desktop/MIREC loader 2022/clean data/2023-02-09_MIREC data.csv")
+
+data <- read.csv("//ais-fs1.sfu.ca/home2/Redirected_Profiles/jalampi/Desktop/MIREC loader 2022/clean data/2024-04-02_MIREC data.csv") 
+
+```
+
+# clean data
+```{r}
+data <- data %>% 
+  filter(is.na(srs) == F) 
+```
+
+
+# Find info for text of the manuscript
+```{r}
+complete_lead_data <- data %>% 
+  filter(is.na(lead.t1.res) == F) %>% 
+  filter(is.na(lead.t3.res) == F)
+
+cor(complete_lead_data$lead.t1.res, complete_lead_data$lead.t3.res, method =  "pearson")
+
+complete_plfol_data <- data %>% 
+  filter(is.na(tot_fol.t1) == F) %>% 
+  filter(is.na(tot_fol.t3) == F)
+
+cor(complete_plfol_data$tot_fol.t1, complete_plfol_data$tot_fol.t3, method =  "pearson")
+
+```
+
+# analysis
+## prep
+```{r}
+# select the biomarkers to be included in table
+biomarkers <- data %>% 
+  select(lead.t1.res, lead.t3.res, tot_fol.t1, tot_fol.t3) 
+
+# select the LOD columns where necessary
+biomarkers_lods <- data %>% 
+  select(lead.t1.flag, lead.t3.flag) 
+
+```
+
+## make table
+```{r}
+table <- setNames(data.frame(matrix(data = NA, nrow =4, ncol = 10)), #make dataframe
+  c("Biomarker Name", "time", "n", "%>LOD", "GeoMean", "GeoSD", "25th", "50th", "75th", "95th")) #set column names
+
+table[1, 1] <- 'lead'
+table[2, 1] <- 'lead'
+table[3, 1] <- 'folate'
+table[4, 1] <- 'folate'
+
+table[1, 2] <- 'First'
+table[2, 2] <- 'Third'
+table[3, 2] <- 'First'
+table[4, 2] <- 'Third'
+
+
+```
+
+## populate
+```{r}
+
+for(i in 1:length(biomarkers)) {  
+  
+  # select biomarker
+  x <- (biomarkers[,i])
+  
+  # find the number of people with results for reach biomarker
+  n <- sum(complete.cases(x))
+  
+  table[i, 3] <- n
+  
+  # Find % above LOD
+  if(i == 3 | i == 4){
+    table[i, 4] <- "-"
+  } else {
+    x_lod <- biomarkers_lods[,i]
+    table[i, 4] <- round(table(x_lod)[1]/n, 3)*100 #Proportion above LOD  
+  }
+  
+  # Chemical distributions
+  table[i, 5]  <- format(round(geoMean(x, na.rm=T), 2), nsmall = 2) # Geometric Mean
+  table[i, 6]  <- format(round(geoSD(x, na.rm=T), 2), nsmall = 2) # Geometric SD
+  table[i, 7]  <- format(round(quantile(x,0.25, na.rm=T), 2), nsmall = 2) # 25th
+  table[i, 8]  <- format(round(quantile(x,0.5, na.rm=T), 2), nsmall = 2) # 50th
+  table[i, 9]  <- format(round(quantile(x,0.75, na.rm=T), 2), nsmall = 2) # 75th
+  table[i, 10] <- format(round(quantile(x,0.95, na.rm=T), 2), nsmall = 2) # 95th
+  
+}
+
+table
+```
+
+
+# save
+```{r}
+#save as a MS excel file
+write_xlsx(table, path = paste0("descriptive stats/results/table_biomarker dist",
+                                "_",  Sys.Date(), ".xlsx", sep = ""))
+```
+
+```{r}
+
+```
+
+

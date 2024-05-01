@@ -1,0 +1,110 @@
+---
+title: "distribution of folate vars"
+author: "Josh Alampi"
+date: "2022-07-22"
+output: html_document
+---
+
+
+# load
+```{r}
+#clear workspace
+rm(list=ls(all=TRUE))
+
+#load packages
+library(readr); library(writexl) # for read_csv(); write_xlsx()  
+library(plyr) # mapvalues()
+library(MASS)
+library(dplyr)
+library(tidyr) # for gather()
+library(ggplot2)
+library(ggrepel); library(ggpubr); library(scales) # extra ggplot features
+library(signs) # for signs_format(), uses proper minus sign instead of hyphen
+library(lmtest) # for bptest()
+library(quantreg)
+library(bayesQR)
+select <- dplyr::select
+# library(rstan)
+# library(emg) # for exponentially modified gaussian model
+
+data <- read.csv("//ais-fs1.sfu.ca/home2/Redirected_Profiles/jalampi/Desktop/MIREC loader 2022/clean data/2024-04-02_MIREC data.csv")
+
+```
+
+# clean data
+
+## Eliminate participants with incomplete information
+```{r}
+data <- data %>% 
+  filter(is.na(srs)==F) 
+```
+
+# folate distribution
+```{r}
+# first trimester concentrations
+pl_fol_10.t1 <- quantile(data$tot_fol.t1, 0.1, na.rm = T)
+pl_fol_80.t1 <- quantile(data$tot_fol.t1, 0.8, na.rm = T)
+
+# third trimester concentrations
+pl_fol_10.t3 <- quantile(data$tot_fol.t3, 0.1, na.rm = T)
+pl_fol_80.t3 <- quantile(data$tot_fol.t3, 0.8, na.rm = T)
+
+# store this info
+fol_cutoffs <- setNames(data.frame(matrix(data = NA, nrow = 4, ncol = 3)), #make dataframe
+                                        c("Trimester", "Quantile", "value")) #set column names
+fol_cutoffs[1:2, 1] <- "First"; fol_cutoffs[3:4, 1] <- "Third"
+fol_cutoffs[c(1,3), 2] <- "10th"; fol_cutoffs[c(2,4), 2] <- "80th"
+fol_cutoffs[,3] <- c(pl_fol_10.t1, pl_fol_80.t1, pl_fol_10.t3, pl_fol_80.t3)
+```
+
+
+```{r}
+# make figure
+data_plfol <- data %>% 
+  select(c(tot_fol.t1, tot_fol.t3)) %>%
+  rename(First = tot_fol.t1) %>% 
+  rename(Third = tot_fol.t3) %>% 
+  pivot_longer(cols = c(First, Third), names_to = "Trimester") 
+
+fol_dist <- data_plfol%>% 
+  ggplot(aes(x = value, colour = Trimester, fill = Trimester, linetype = Trimester)) + 
+  # geom_histogram(aes(y = ..density..), alpha = 0.5, position = "identity", bins = 50) +
+  geom_density(alpha = 0.25) +
+  geom_vline(data = fol_cutoffs, aes(xintercept = value, color = Trimester, linetype = Trimester)) +
+  xlab("Plasma total folate concentration, nmol/L") + 
+  theme_bw()
+
+fol_dist
+```
+
+
+```{r}
+ggsave(file = paste0("descriptive stats/results/plasma folate dist", "_",  Sys.Date(), ".png"),
+       width = 7, height = 4, dpi = 300)
+
+```
+
+# FA supp distribution
+```{r}
+FAsupp_dist <- data %>% 
+  ggplot() + 
+  geom_histogram(aes(x = fol.intake), position = "identity", bins = 50, alpha = 0.5) +
+  geom_vline(xintercept = c(400, 1000), linetype = "dashed") +
+  xlab("Folic acid supplementation, μg/day") + 
+  theme_bw() +
+  scale_x_continuous(breaks = c(seq(0, 6000, by = 1000))) # add labels every 1000 units
+
+FAsupp_dist
+```
+
+
+```{r}
+ggsave(file = paste0("descriptive stats/results/FA supp dist", "_",  Sys.Date(), ".png"),
+       width = 7, height = 4, dpi = 300)
+
+```
+
+```{r}
+
+```
+
